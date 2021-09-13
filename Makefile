@@ -1,7 +1,7 @@
 CXX = g++
 COBJS = src/main.o src/track.o network/network.o
-CXXFLAGS = -I ./include/ -I ./ -I ./network/ -Wall
-EDLDFLAGS := -lsi446x -lpthread -lm
+CXXFLAGS = -I ./include/ -I ./ -I ./network/ -Wall -I clkgen/include
+EDLDFLAGS := -L clkgen/ -lclkgen -Wl,-rpath=/usr/local/lib -lsgp4s -lpthread -lm
 TARGET = track.out
 
 all: $(COBJS)
