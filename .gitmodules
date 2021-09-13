@@ -1,3 +1,6 @@
 [submodule "network"]
 	path = network
 	url = git@github.com:mitbailey/network
+[submodule "clkgen"]
+	path = clkgen
+	url = git@github.com:sunipkmukherjee/clkgen
